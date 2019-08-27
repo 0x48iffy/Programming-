@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    double foot,inch,kj,kc,kg,pound,f,k;
+  g:
+    cout<<"\t\t\tConverter System\n\n";
+    cout<<"Enter your choice...\n\n";
+    cout<<"[1]Foot to Inch\n[2]KiloJoule to KiloCalorie \n[3]Kilogram to Pound \n[4]Fahrenheit to Kelvin\n";
+    int n;
+    cin>>n;
+    switch(n)
+    {
+        case 1: cout<<"Foot=";
+                cin>>foot;
+                inch=foot*12;
+                cout<<foot<<"foot/feet="<<inch<<"inch\n";
+                break;
+        case 2: cout<<"KiloJoule=";
+                cin>>kj;
+                kc=kj*0.239006;
+                cout<<kj<<"KiloJoule="<<kc<<"KiloCalorie\n";
+                break;
+        case 3: cout<<"Kilogram=";
+                cin>>kg;
+                pound=kg*2.20462;
+                cout<<kg<<"Kilogram="<<pound<<"Pounds\n";
+                break;
+        case 4: cout<<"Fahrenheit=";
+                cin>>f;
+                k=f*255.928;
+                cout<<f<<"Fahrenheit="<<k<<"Kelvin\n";
+                break;
+        default :
+            system("CLS");
+            cout<<"You've entered a wrong choice\n";
+            goto g;
+    }
+}
